@@ -12,20 +12,25 @@
     <main>
         <section>
             <h2>Генератор паролей</h2>
-            <label><input type="number">длина</label><br>
-            <label><input type="checkbox">строчные</label><br>
-            <label><input type="checkbox">заглавные</label><br>
-            <label><input type="checkbox">цифры</label><br>
-            <label><input type="checkbox">спецсимволы</label><br>
-            <button>Сгенерировать</button><br>
-            <hr>
-            <output>test</output>
+            <form>
+                <label>Длина<input type="number" min="8" max="128"></label>
+                <fieldset>
+                    <legend>Символы для создания пароля:</legend>
+                    <label><input type="checkbox">Строчные</label>
+                    <label><input type="checkbox">Заглавные</label>
+                    <label><input type="checkbox">Цифры</label>
+                    <label><input type="checkbox">Спецсимволы</label>
+                </fieldset>
+                <button>Сгенерировать</button>
+                <output></output>
+            </form>
         </section>
         <section>
             <h2>Проверка стойкости</h2>
-            <label><input type="text" placeholder="Введите ваш пароль">Пароль</label><br>
-            <hr>
-            <output>test</output>
+            <form>
+                <label>Пароль<input type="password"></label>
+            <output></output>
+            </form>
         </section>
     </main>
     <footer>
